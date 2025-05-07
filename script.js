@@ -179,3 +179,5 @@ document.getElementById("photo12").addEventListener("click", function () {
 });
   
 });
+
+
