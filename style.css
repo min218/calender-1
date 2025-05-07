@@ -34,10 +34,10 @@ img {
 /* 두 번째 사진 (photo2) */
 .photo2 {
     width: 15vw !important; /* 화면 너비의 30% 크기 */
-    max-width: 500px; /* 최대 너비를 500px로 제한 */
+    max-width: 300px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 15%; /* 사진의 위치 */
+    top: 10%; /* 사진의 위치 */
     left: 15%; /* 사진의 위치 */
     animation: movePhoto2 2.5s infinite alternate ease-in-out;
 }
