@@ -1,0 +1,306 @@
+
+img {
+    image-rendering: -webkit-optimize-contrast; /* 이미지 확대 시 품질 향상 */
+  }
+
+/* 사진 컨테이너 */
+.photo-container {
+    position: absolute;
+    transform: translateX(10%); /* 가운데 정렬 */
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    /* flex 관련 속성 제거 */
+  }
+  
+  /* 공통 사진 스타일 */
+  .photo1, .photo2, .photo3, .photo4, .photo5, .photo6,.photo7,.photo8, .photo9, .photo10, .photo11, .photo12 {
+    position: absolute; /* 위치를 절대적으로 설정 */
+    margin: 0; /* 간격은 margin이 아닌 직접 위치로 설정 */ 
+    object-fit: contain; /* 비율을 유지하며 사진 크기 조절 */
+    height: auto; /* 높이는 자동으로 비율 맞추기 */
+  }
+  
+  /* 첫 번째 사진 (photo1) */
+  .photo1 {
+    width: 1500px; /* 최대 너비 */
+    top: 3%;  /* 사진의 위치 */
+    left: -7%;  /* 사진의 위치 */
+
+    animation: roll -1s linear infinite, bounce 1s ease-in-out infinite
+  }
+  
+  /* 두 번째 사진 (photo2) */
+  .photo2 {
+    width: 850px; /* 최대 너비 */
+    top: 15%;  /* 사진의 위치 */
+    left: 15%;  /* 사진의 위치 */
+
+    animation: movePhoto2 2.5s infinite alternate ease-in-out
+  }
+  
+  /* 세 번째 사진 (photo3) */
+  .photo3 {
+    width: 900px; /* 최대 너비 */
+    top: 16%;  /* 사진의 위치 */
+    left: 53%;  /* 사진의 위치 */
+
+    animation: movePhoto3 2.5s infinite alternate ease-in-out;
+  }
+  
+  /* 네 번째 사진 (photo4) */
+  .photo4 {
+    width: 1100px; /* 최대 너비 */
+    top: 47%;  /* 사진의 위치 */
+    left: -5%;  /* 사진의 위치 */
+
+    animation: movePhoto4 3s infinite alternate ease-in-out;
+  }
+
+  .photo5 {
+    width: 1000px; /* 최대 너비 */
+    top: 40%;  /* 사진의 위치 */
+    left: 6%;  /* 사진의 위치 */
+
+    
+    animation: movePhoto5 3s ease-in-out infinite;
+    
+  }
+
+  .photo6 {
+    width: 1410px; /* 최대 너비 */
+    top: 42%;  /* 사진의 위치 */
+    left: 48%;  /* 사진의 위치 */
+
+    animation: movePhoto6 5s linear infinite; /* 3초 동안 360도 회전 */
+    transform-origin: center center; /* 회전 중심을 사진의 중앙으로 설정 */
+  }
+
+  .photo7 {
+    width: 590px; /* 최대 너비 */
+    top: 25%;  /* 사진의 위치 */
+    left: 40%;  /* 사진의 위치 */
+
+    animation: movePhoto7 5s linear infinite; /* 3초 동안 360도 회전 */
+    transform-origin: center center; /* 회전 중심을 사진의 중앙으로 설정 */
+  }
+
+  .photo8 {
+    width: 1500px; /* 최대 너비 */
+    top: 63%;  /* 사진의 위치 */
+    left: 72%;  /* 사진의 위치 */
+
+    animation: roll -1s linear infinite, bounce 3s ease-in-out infinite
+  }
+
+  .photo9 {/*바이킹*/
+    width: 850px; /* 최대 너비 */
+    top: 46%;  /* 사진의 위치 */
+    left: 26%;  /* 사진의 위치 */
+    
+    animation: bounce 2s ease-in-out infinite; /* 2초마다 반복, 부드럽고 일정한 속도 */
+  }
+
+  .photo10 {
+    width: 1000px; /* 최대 너비 */
+    top: 70%;  /* 사진의 위치 */
+    left: 15%;  /* 사진의 위치 */
+
+    animation: movePhoto11 5s ease-in-out infinite, colorChange2 5s ease-in-out infinite;
+    
+  }
+
+  .photo11 {
+    width: 1000px; /* 최대 너비 */
+    top: 10%;  /* 사진의 위치 */
+    left: 70%;  /* 사진의 위치 */
+
+    animation: movePhoto11 3s ease-in-out infinite, colorChange 5s ease-in-out infinite;
+  }
+
+  .photo12 {
+    width: 800px; /* 최대 너비 */
+    top: 64%;  /* 사진의 위치 */
+    left: 43%;  /* 사진의 위치 */
+
+    animation: movePhoto12 3s ease-in-out infinite; /* 흔들리는 애니메이션 추가 */
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* 첫 번째 사진의 애니메이션 */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-20); /* 원래 위치 */
+    }
+    50% {
+      transform: translateY(-200px); /* 위로 튀어오름 */
+    }
+  }
+  
+  
+  /* 두 번째 사진의 애니메이션 */
+  @keyframes movePhoto2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(200px, -80px); /* 왼쪽 위로 이동 */
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  /* 세 번째 사진의 애니메이션 */
+  @keyframes movePhoto3 {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* 확대 */
+    }
+
+    }
+  
+  
+  /* 네 번째 사진의 애니메이션 */
+  @keyframes movePhoto4 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(20deg); /* 살짝 회전 */
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes movePhoto5 {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-40px); /* 왼쪽으로 크게 흔들기 */
+    }
+    50% {
+      transform: translateX(40px); /* 오른쪽으로 크게 흔들기 */
+    }
+    75% {
+      transform: translateX(-20px); /* 왼쪽으로 크게 흔들기 */
+    }
+  }
+  
+
+  @keyframes movePhoto6 {
+    0% {
+        transform: rotate(0deg) translate(20px, 20px); /* 시작 위치 */
+      }
+      50% {
+        transform: rotate(90deg) translate(20px, 20px); /* 180도 회전 */
+      }
+      100% {
+        transform: rotate(0deg) translate(20px, 20px); /* 원래 각도로 돌아가며 자연스럽게 종료 */
+      }
+    }
+
+    @keyframes movePhoto7 {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(10deg); /* 살짝 회전 */
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes bounce2 {
+      0%, 100% {
+        transform: translateY(-10); /* 원래 위치 */
+      }
+      50% {
+        transform: translateY(-100px); /* 위로 튀어오름 */
+      }
+    }
+
+    @keyframes movePhoto9 {
+        0%, 100% {
+            transform: translateY(-20px); /* 원래 위치 */
+          }
+          50% {
+            transform: translateY(300px); /* 위로 튀어오름 */
+          }
+      }
+
+      /* 좌우 움직임 애니메이션 */
+      @keyframes movePhoto10 {
+        0% {
+            transform: translateX(0); /* 원래 위치 */
+          }
+          50% {
+            transform: translateX(-200px); /* 왼쪽으로 한 번에 이동 */
+          }
+          100% {
+            transform: translateX(0); /* 원래 위치로 돌아옴 */
+          }
+        }
+
+      @keyframes colorChange2 {
+        0%, 100% {
+          filter: hue-rotate(0deg) saturate(100%) brightness(100%); /* 원래 상태 */
+        }
+        50% {
+          filter: hue-rotate(-30deg) saturate(150%) brightness(110%); /* 붉은빛 색상 변화 */
+        }
+        
+      }
+
+
+
+      
+      /* 좌우 움직임 애니메이션 */
+      @keyframes movePhoto11 {
+        0% {
+            transform: translateX(0); /* 원래 위치 */
+          }
+          50% {
+            transform: translateX(-200px); /* 왼쪽으로 한 번에 이동 */
+          }
+          100% {
+            transform: translateX(0); /* 원래 위치로 돌아옴 */
+          }
+        }
+
+      @keyframes colorChange {
+        0%, 100% {
+          filter: hue-rotate(0deg) saturate(100%) brightness(100%); /* 원래 상태 */
+        }
+        50% {
+          filter: hue-rotate(90deg) saturate(80%) brightness(110%); /* 그린빛 색상 변화 */
+        }
+      }
+
+
+      @keyframes movePhoto12 {
+        0%, 100% {
+          transform: rotate(0deg) translateX(0);
+        }
+        50% {
+          transform: rotate(-5deg) translateX(-70px); /* 왼쪽으로 살짝 이동 및 회전 */
+        }
+      }
+      
+     
+  
+  
+  
