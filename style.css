@@ -27,7 +27,7 @@ img {
     max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto; /* 비율 유지 */
     top: 3vh; /* 화면 높이에 맞춰 3% 위치 */
-    left: 3vw; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
+    left: -5vw; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
     animation: roll 2s linear infinite, bounce 2s ease-in-out infinite;
 }
 
@@ -89,13 +89,13 @@ img {
 
 /* 일곱 번째 사진 (photo7) */
 .photo7 {
-    width: 15vw !important; /* 화면 너비의 30% 크기 */
+    width: 10vw !important; /* 화면 너비의 30% 크기 */
     max-width: 300px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 25%; /* 사진의 위치 */
     left: 40%; /* 사진의 위치 */
-    animation: movePhoto7 5s linear infinite; /* 3초 동안 360도 회전 */
+    animation: movePhoto7 3s linear infinite; /* 3초 동안 360도 회전 */
     transform-origin: center center; /* 회전 중심을 사진의 중앙으로 설정 */
 }
 
