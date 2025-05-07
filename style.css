@@ -39,7 +39,7 @@ img {
     position: absolute; /* 절대 위치 설정 */
     top: 10%; /* 사진의 위치 */
     left: 15%; /* 사진의 위치 */
-    animation: movePhoto2 2.5s infinite alternate ease-in-out;
+    animation: movePhoto2 2s infinite alternate ease-in-out;
 }
 
 /* 세 번째 사진 (photo3) */
@@ -102,7 +102,7 @@ img {
 /* 여덟 번째 사진 (photo8) */
 .photo8 {
     width: 30vw !important; /* 화면 너비의 30% 크기 */
-    max-width: 500px; /* 최대 너비를 500px로 제한 */
+    max-width: 600px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 63%; /* 사진의 위치 */
