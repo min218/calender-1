@@ -27,7 +27,7 @@ img {
     max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto; /* 비율 유지 */
     top: 3vh; /* 화면 높이에 맞춰 3% 위치 */
-    left: -5vw; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
+    left: 3vw; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
     animation: roll 2s linear infinite, bounce 2s ease-in-out infinite;
 }
 
