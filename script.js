@@ -1,52 +1,3 @@
-function setup() {
-    // 캔버스 크기를 윈도우 크기로 설정
-    createCanvas(windowWidth, windowHeight);
-  
-    // 사진 크기 조정 함수 호출
-    adjustPhotos();
-  }
-  
-  function draw() {
-    // 매 프레임마다 배경을 흰색으로 설정
-    background(255);
-  
-    // 프레임 크기 계산 (가로는 90%, 세로는 90%로 설정)
-    let frameWidth = width * 0.9;
-    let frameHeight = height * 0.9;
-  
-    // 캔버스의 가운데에 직사각형을 그리기 위한 좌표 계산
-    let x = (width - frameWidth) / 2;
-    let y = (height - frameHeight) / 2;
-  
-    // 선 스타일 설정
-    stroke(0, 0, 0);
-    strokeWeight(10); // 선 두께 (10px)
-  
-    // 직사각형 그리기 (화면의 중앙에 크기 frameWidth와 frameHeight만큼)
-    line(x, y, x + frameWidth, y); // 상단 선
-    line(x, y, x, y + frameHeight); // 좌측 선
-    line(x, y + frameHeight, x + frameWidth, y + frameHeight); // 하단 선
-    line(x + frameWidth, y, x + frameWidth, y + frameHeight); // 우측 선
-  }
-  
-  // 사진 크기 조정 함수
-  function adjustPhotos() {
-    // 사진 컨테이너와 사진을 선택
-    const photoContainer = document.getElementById('photoContainer');
-    const photos = photoContainer.getElementsByTagName('img');
-  
-    // 캔버스 크기 기반으로 사진 크기 조정
-    const maxPhotoWidth = width * 0.15; // 캔버스 너비의 15%를 사진의 최대 너비로 설정
-    const maxPhotoHeight = height * 0.15; // 캔버스 높이의 15%를 사진의 최대 높이로 설정
-  
-    // 각 사진 크기 조정
-    for (let photo of photos) {
-    }  
-}
-
-//-------------------------------------------------------------------------------
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
     "./data/cal1.svg", 
@@ -140,42 +91,65 @@ document.addEventListener("DOMContentLoaded", function () {
       </html>
     `);
   }
-// 각 photo 클릭 시 적절한 초기 이미지로 캘린더 표시
-document.getElementById("photo1").addEventListener("click", function () {
-  openCalendar(0); // cal1을 처음으로
+
+  function adjustPhotos() {
+    const photoContainer = document.getElementById('photoContainer');
+    const photos = photoContainer.getElementsByTagName('img');
+
+    // 사진의 랜덤 위치를 설정
+    const maxPhotoWidth = window.innerWidth * 0.15; // 너비 비율
+    const maxPhotoHeight = window.innerHeight * 0.15; // 높이 비율
+
+    for (let photo of photos) {
+      const randomTop = Math.random() * 80; // 0~80% 사이의 랜덤 위치
+      const randomLeft = Math.random() * 80;
+      photo.style.position = 'absolute';
+      photo.style.top = randomTop + 'vh';
+      photo.style.left = randomLeft + 'vw';
+      photo.style.width = maxPhotoWidth + 'px';
+      photo.style.height = maxPhotoHeight + 'px';
+    }
+  }
+
+  // 페이지가 로드되면 adjustPhotos 호출
+  adjustPhotos();
+
+  // 각 photo 클릭 시 적절한 초기 이미지로 캘린더 표시
+  document.getElementById("photo1").addEventListener("click", function () {
+    openCalendar(0); // cal1을 처음으로
+  });
+  document.getElementById("photo2").addEventListener("click", function () {
+    openCalendar(1); // cal2를 처음으로
+  });
+  document.getElementById("photo3").addEventListener("click", function () {
+    openCalendar(2); // cal3를 처음으로
+  });
+  document.getElementById("photo4").addEventListener("click", function () {
+    openCalendar(3); // cal4를 처음으로
+  });
+  document.getElementById("photo5").addEventListener("click", function () {
+    openCalendar(4); // cal5를 처음으로
+  });
+  document.getElementById("photo6").addEventListener("click", function () {
+    openCalendar(5); // cal6를 처음으로
+  });
+  document.getElementById("photo7").addEventListener("click", function () {
+    openCalendar(6); // cal7를 처음으로
+  });
+  document.getElementById("photo8").addEventListener("click", function () {
+    openCalendar(7); // cal8를 처음으로
+  });
+  document.getElementById("photo9").addEventListener("click", function () {
+    openCalendar(8); // cal9를 처음으로
+  });
+  document.getElementById("photo10").addEventListener("click", function () {
+    openCalendar(9); // cal10를 처음으로
+  });
+  document.getElementById("photo11").addEventListener("click", function () {
+    openCalendar(10); // cal11를 처음으로
+  });
+  document.getElementById("photo12").addEventListener("click", function () {
+    openCalendar(11); // cal12를 처음으로
+  });
 });
-document.getElementById("photo2").addEventListener("click", function () {
-  openCalendar(1); // cal2를 처음으로
-});
-document.getElementById("photo3").addEventListener("click", function () {
-  openCalendar(2); // cal3를 처음으로
-});
-document.getElementById("photo4").addEventListener("click", function () {
-  openCalendar(3); // cal4를 처음으로
-});
-document.getElementById("photo5").addEventListener("click", function () {
-  openCalendar(4); // cal5를 처음으로
-});
-document.getElementById("photo6").addEventListener("click", function () {
-  openCalendar(5); // cal6를 처음으로
-});
-document.getElementById("photo7").addEventListener("click", function () {
-  openCalendar(6); // cal7를 처음으로
-});
-document.getElementById("photo8").addEventListener("click", function () {
-  openCalendar(7); // cal8를 처음으로
-});
-document.getElementById("photo9").addEventListener("click", function () {
-  openCalendar(8); // cal9를 처음으로
-});
-document.getElementById("photo10").addEventListener("click", function () {
-  openCalendar(9); // cal10를 처음으로
-});
-document.getElementById("photo11").addEventListener("click", function () {
-  openCalendar(10); // cal11를 처음으로
-});
-document.getElementById("photo12").addEventListener("click", function () {
-  openCalendar(11); // cal12를 처음으로
-});
-  
-});
+
