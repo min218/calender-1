@@ -23,11 +23,11 @@ img {
   
 /* 첫 번째 사진 (photo1) */
 .photo1 {
-    width: 30vw; /* 화면 너비의 30% 크기 */
+    width: 40vw; /* 화면 너비의 30% 크기 */
     max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto; /* 비율 유지 */
     top: 3vh; /* 화면 높이에 맞춰 3% 위치 */
-    left: -5%; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
+    left: -10%; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
     animation: roll 2.5s linear infinite, bounce 2.5s ease-in-out infinite;
 }
 
@@ -60,7 +60,7 @@ img {
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 47%; /* 사진의 위치 */
-    left: -10%; /* 사진의 위치 */
+    left: -15%; /* 사진의 위치 */
     animation: movePhoto4 3s infinite alternate ease-in-out;
 }
 
