@@ -60,7 +60,7 @@ img {
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 47%; /* 사진의 위치 */
-    left: -5%; /* 사진의 위치 */
+    left: -3%; /* 사진의 위치 */
     animation: movePhoto4 3s infinite alternate ease-in-out;
 }
 
@@ -78,7 +78,7 @@ img {
 /* 여섯 번째 사진 (photo6) */
 .photo6 {
     width: 15vw !important; /* 화면 너비의 30% 크기 */
-    max-width: 500px; /* 최대 너비를 500px로 제한 */
+    max-width: 600px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 42%; /* 사진의 위치 */
@@ -139,14 +139,14 @@ img {
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 10%; /* 사진의 위치 */
-    left: 70%; /* 사진의 위치 */
+    left: 80%; /* 사진의 위치 */
     animation: movePhoto11 3s ease-in-out infinite, colorChange 5s ease-in-out infinite;
 }
 
 /* 열두 번째 사진 (photo12) */
 .photo12 {
     width: 15vw !important; /* 화면 너비의 30% 크기 */
-    max-width: 500px; /* 최대 너비를 500px로 제한 */
+    max-width: 400px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 64%; /* 사진의 위치 */
