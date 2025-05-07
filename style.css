@@ -70,7 +70,7 @@ img {
     max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 40%; /* 사진의 위치 */
+    top: 35%; /* 사진의 위치 */
     left: 6%; /* 사진의 위치 */
     animation: movePhoto5 3s ease-in-out infinite;
 }
@@ -139,7 +139,7 @@ img {
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 10%; /* 사진의 위치 */
-    left: 80%; /* 사진의 위치 */
+    left: 75%; /* 사진의 위치 */
     animation: movePhoto11 3s ease-in-out infinite, colorChange 5s ease-in-out infinite;
 }
 
