@@ -101,8 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const maxPhotoHeight = window.innerHeight * 0.15; // 높이 비율
 
     for (let photo of photos) {
-      const randomTop = Math.random() * 80; // 0~80% 사이의 랜덤 위치
-      const randomLeft = Math.random() * 80;
+      const randomTop = Math.random() * 50; // 0~80% 사이의 랜덤 위치
+      const randomLeft = Math.random() * 50;
       photo.style.position = 'absolute';
       photo.style.top = randomTop + 'vh';
       photo.style.left = randomLeft + 'vw';
