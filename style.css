@@ -23,7 +23,7 @@ img {
   
  /* 첫 번째 사진 (photo1) */
 .photo1 {
-    width: 50vw; /* 화면 너비의 50% 크기 */
+    width: 30vw; /* 화면 너비의 50% 크기 */
     max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto; /* 비율 유지 */
     top: 3vh; /* 화면 높이에 맞춰 3% 위치 */
