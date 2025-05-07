@@ -60,7 +60,7 @@ img {
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 47%; /* 사진의 위치 */
-    left: -3%; /* 사진의 위치 */
+    left: -1%; /* 사진의 위치 */
     animation: movePhoto4 3s infinite alternate ease-in-out;
 }
 
@@ -117,7 +117,7 @@ img {
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
     top: 46%; /* 사진의 위치 */
-    left: 26%; /* 사진의 위치 */
+    left: 22%; /* 사진의 위치 */
     animation: bounce 2s ease-in-out infinite; /* 2초마다 반복, 부드럽고 일정한 속도 */
 }
 
