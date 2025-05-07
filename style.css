@@ -21,127 +21,136 @@ img {
     height: auto; /* 높이는 자동으로 비율 맞추기 */
   }
   
- /* 첫 번째 사진 (photo1) */
+/* 첫 번째 사진 (photo1) */
 .photo1 {
-    width: 30vw; /* 화면 너비의 50% 크기 */
+    width: 30vw; /* 화면 너비의 30% 크기 */
     max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto; /* 비율 유지 */
     top: 3vh; /* 화면 높이에 맞춰 3% 위치 */
     left: -7vw; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
-
     animation: roll 1s linear infinite, bounce 1s ease-in-out infinite;
 }
 
-  
- /* 두 번째 사진 (photo2) */
+/* 두 번째 사진 (photo2) */
 .photo2 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 15%;  /* 사진의 위치 */
-    left: 15%;  /* 사진의 위치 */
+    top: 15%; /* 사진의 위치 */
+    left: 15%; /* 사진의 위치 */
     animation: movePhoto2 2.5s infinite alternate ease-in-out;
 }
 
 /* 세 번째 사진 (photo3) */
 .photo3 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 16%;  /* 사진의 위치 */
-    left: 53%;  /* 사진의 위치 */
+    top: 16%; /* 사진의 위치 */
+    left: 53%; /* 사진의 위치 */
     animation: movePhoto3 2.5s infinite alternate ease-in-out;
 }
 
 /* 네 번째 사진 (photo4) */
 .photo4 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 47%;  /* 사진의 위치 */
-    left: -5%;  /* 사진의 위치 */
+    top: 47%; /* 사진의 위치 */
+    left: -5%; /* 사진의 위치 */
     animation: movePhoto4 3s infinite alternate ease-in-out;
 }
 
 /* 다섯 번째 사진 (photo5) */
 .photo5 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 40%;  /* 사진의 위치 */
-    left: 6%;  /* 사진의 위치 */
+    top: 40%; /* 사진의 위치 */
+    left: 6%; /* 사진의 위치 */
     animation: movePhoto5 3s ease-in-out infinite;
 }
 
 /* 여섯 번째 사진 (photo6) */
 .photo6 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 42%;  /* 사진의 위치 */
-    left: 48%;  /* 사진의 위치 */
+    top: 42%; /* 사진의 위치 */
+    left: 48%; /* 사진의 위치 */
     animation: movePhoto6 5s linear infinite; /* 3초 동안 360도 회전 */
     transform-origin: center center; /* 회전 중심을 사진의 중앙으로 설정 */
 }
 
 /* 일곱 번째 사진 (photo7) */
 .photo7 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 25%;  /* 사진의 위치 */
-    left: 40%;  /* 사진의 위치 */
+    top: 25%; /* 사진의 위치 */
+    left: 40%; /* 사진의 위치 */
     animation: movePhoto7 5s linear infinite; /* 3초 동안 360도 회전 */
     transform-origin: center center; /* 회전 중심을 사진의 중앙으로 설정 */
 }
 
 /* 여덟 번째 사진 (photo8) */
 .photo8 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 63%;  /* 사진의 위치 */
-    left: 72%;  /* 사진의 위치 */
+    top: 63%; /* 사진의 위치 */
+    left: 72%; /* 사진의 위치 */
     animation: roll -1s linear infinite, bounce 3s ease-in-out infinite;
 }
 
 /* 아홉 번째 사진 (photo9) */
 .photo9 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 46%;  /* 사진의 위치 */
-    left: 26%;  /* 사진의 위치 */
+    top: 46%; /* 사진의 위치 */
+    left: 26%; /* 사진의 위치 */
     animation: bounce 2s ease-in-out infinite; /* 2초마다 반복, 부드럽고 일정한 속도 */
 }
 
 /* 열 번째 사진 (photo10) */
 .photo10 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 70%;  /* 사진의 위치 */
-    left: 15%;  /* 사진의 위치 */
+    top: 70%; /* 사진의 위치 */
+    left: 15%; /* 사진의 위치 */
     animation: movePhoto11 5s ease-in-out infinite, colorChange2 5s ease-in-out infinite;
 }
 
 /* 열한 번째 사진 (photo11) */
 .photo11 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 10%;  /* 사진의 위치 */
-    left: 70%;  /* 사진의 위치 */
+    top: 10%; /* 사진의 위치 */
+    left: 70%; /* 사진의 위치 */
     animation: movePhoto11 3s ease-in-out infinite, colorChange 5s ease-in-out infinite;
 }
 
 /* 열두 번째 사진 (photo12) */
 .photo12 {
-    width: 30vw !important; /* 최대 너비 */
+    width: 30vw !important; /* 화면 너비의 30% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto !important; /* 비율 유지 */
     position: absolute; /* 절대 위치 설정 */
-    top: 64%;  /* 사진의 위치 */
-    left: 43%;  /* 사진의 위치 */
+    top: 64%; /* 사진의 위치 */
+    left: 43%; /* 사진의 위치 */
     animation: movePhoto12 3s ease-in-out infinite; /* 흔들리는 애니메이션 추가 */
 }
 
