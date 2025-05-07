@@ -21,16 +21,17 @@ img {
     height: auto; /* 높이는 자동으로 비율 맞추기 */
   }
   
-  /* 첫 번째 사진 (photo1) */
+ /* 첫 번째 사진 (photo1) */
 .photo1 {
-    width: 100vw; /* 화면 너비에 맞추기 (뷰포트 너비의 100%) */
-    max-width: 150px; /* 최대 너비 설정 */
+    width: 50vw; /* 화면 너비의 50% 크기 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto; /* 비율 유지 */
     top: 3vh; /* 화면 높이에 맞춰 3% 위치 */
     left: -7vw; /* 화면 너비에 맞춰 왼쪽 위치를 7% 이동 */
 
     animation: roll 1s linear infinite, bounce 1s ease-in-out infinite;
 }
+
   
   /* 두 번째 사진 (photo2) */
   .photo2 {
